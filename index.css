@@ -1,0 +1,110 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Georgia;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #444;
+    transition: 0.4s;
+}
+a:hover{
+    color: #37a1f7;
+}
+.nav-bar{
+   
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px solid #444;
+}
+#nav-inner{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 1200px;
+
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.container{
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#post-container{
+    flex:3 1 0;
+}
+.post{
+    margin-bottom: 2.5rem;
+}
+.post img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.title, .description, .author{
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 2rem;
+}
+.author{
+    color:#333 ;
+    font-weight: bold;
+}
+#sidebar{
+    flex:  1 1 0;
+}
+#sarch, #categori,#tags{
+    padding: 2.5rem;
+    border: 2px solid #ddd;
+    margin-bottom: 1rem;
+}
+#sarch h3,#categori h3,#tags h3{
+   margin-bottom: 1.5 rem;
+   font-size: 1.5rem;
+}
+#sarch form{
+    display: flex;
+}
+#sarch input{
+    padding:0.5rem 1rem ;
+    border:1px solid #ddd
+}
+#sarch input[type="submit"]{
+    cursor: pointer;
+    background-color: #37a1f7;
+    color: #fff;
+    border: none;
+}
+#categori li{
+    margin-bottom: 1rem;
+    margin-top: 3px;
+}
+#tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+#footer{
+    border-top: 2px solid #ddd;
+    padding: 3rem;
+    text-align: center;
+}
+#footer h2, #footer p{
+    margin-bottom: 1rem;
+}
+@media(max-width:"500px"){
+    .container{
+        flex-wrap: wrap;
+    }
+    
+
+}
